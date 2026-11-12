@@ -1,0 +1,48 @@
+{
+  "n_runs": 200,
+  "seed": 2026,
+  "nees_95pct_bounds": [
+    3.618,
+    4.401
+  ],
+  "nis_95pct_bounds": [
+    1.732,
+    2.287
+  ],
+  "rows": [
+    {
+      "filter": "Matched",
+      "q_scale": 1.0,
+      "position_rmse": 0.7415,
+      "mean_nees": 4.031,
+      "nees_steps_inside_95pct": 0.948,
+      "mean_nis": 1.996,
+      "nis_steps_inside_95pct": 0.962,
+      "innovation_autocorr_lag1": 0.003216
+    },
+    {
+      "filter": "Overconfident (Q / 100)",
+      "q_scale": 0.01,
+      "position_rmse": 1.99,
+      "mean_nees": 190.9,
+      "nees_steps_inside_95pct": 0.0,
+      "mean_nis": 2.951,
+      "nis_steps_inside_95pct": 0.074,
+      "innovation_autocorr_lag1": 0.2271
+    },
+    {
+      "filter": "Conservative (Q x 100)",
+      "q_scale": 100.0,
+      "position_rmse": 1.121,
+      "mean_nees": 2.09,
+      "nees_steps_inside_95pct": 0.0,
+      "mean_nis": 1.884,
+      "nis_steps_inside_95pct": 0.858,
+      "innovation_autocorr_lag1": -0.05324
+    }
+  ],
+  "figures": [
+    "figures/e3_nees_over_time.png",
+    "figures/e3_innovation_autocorrelation.png"
+  ]
+}

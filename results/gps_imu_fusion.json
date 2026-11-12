@@ -1,0 +1,87 @@
+{
+  "n_runs": 200,
+  "seed": 2026,
+  "scenario": {
+    "dt": 0.01,
+    "duration": 60.0,
+    "gps_every": 100,
+    "gps_std": 3.0,
+    "accel_noise_std": 0.2,
+    "bias_init_std": 0.15,
+    "bias_walk_std": 0.005,
+    "amplitude": 50.0,
+    "init_pos_std": 3.0,
+    "init_vel_std": 0.5,
+    "outage": null
+  },
+  "burn_in_s": 10.0,
+  "gps_only_best_accel_std": 16.0,
+  "rows": [
+    {
+      "estimator": "GPS, last fix held",
+      "position_rmse": 5.229
+    },
+    {
+      "estimator": "IMU dead reckoning",
+      "position_rmse": 183.3,
+      "velocity_rmse": 7.846
+    },
+    {
+      "estimator": "Kalman filter, GPS only",
+      "position_rmse": 4.23,
+      "velocity_rmse": 2.379,
+      "mean_nees_pv": 2.612
+    },
+    {
+      "estimator": "Fused, bias ignored",
+      "position_rmse": 21.4,
+      "velocity_rmse": 3.208,
+      "mean_nees_pv": 1474.0
+    },
+    {
+      "estimator": "Fused, bias estimated",
+      "position_rmse": 2.312,
+      "velocity_rmse": 0.4363,
+      "mean_nees_pv": 3.947
+    }
+  ],
+  "bias_rmse_initial": 0.2051,
+  "bias_rmse_final": 0.02859,
+  "outage_s": [
+    30.0,
+    45.0
+  ],
+  "outage_rows": [
+    {
+      "estimator": "GPS, last fix held",
+      "position_rmse_during_outage": 46.53,
+      "position_error_at_end_of_outage": 56.37
+    },
+    {
+      "estimator": "IMU dead reckoning",
+      "position_rmse_during_outage": 150.1,
+      "position_error_at_end_of_outage": 206.6
+    },
+    {
+      "estimator": "Kalman filter, GPS only",
+      "position_rmse_during_outage": 32.78,
+      "position_error_at_end_of_outage": 74.85
+    },
+    {
+      "estimator": "Fused, bias ignored",
+      "position_rmse_during_outage": 49.88,
+      "position_error_at_end_of_outage": 83.24
+    },
+    {
+      "estimator": "Fused, bias estimated",
+      "position_rmse_during_outage": 6.572,
+      "position_error_at_end_of_outage": 10.99
+    }
+  ],
+  "figures": [
+    "figures/e4_trajectory.png",
+    "figures/e4_error_over_time.png",
+    "figures/e4_error_with_outage.png",
+    "figures/e4_bias_estimate.png"
+  ]
+}

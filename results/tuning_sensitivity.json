@@ -1,0 +1,128 @@
+{
+  "n_runs": 400,
+  "seed": 2026,
+  "optimal_rmse": 0.739,
+  "scales": [
+    0.001,
+    0.0031622776601683794,
+    0.01,
+    0.03162277660168379,
+    0.1,
+    0.31622776601683794,
+    1.0,
+    3.1622776601683795,
+    10.0,
+    31.622776601683793,
+    100.0,
+    316.2277660168379,
+    1000.0
+  ],
+  "rmse_inflation_vs_q_scale_at_true_r": [
+    6.754,
+    4.391,
+    2.873,
+    1.917,
+    1.353,
+    1.075,
+    1.0,
+    1.05,
+    1.168,
+    1.326,
+    1.512,
+    1.723,
+    1.956
+  ],
+  "rmse_inflation_on_diagonal": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "nees_over_n_on_diagonal": [
+    1000.0,
+    316.2,
+    100.0,
+    31.62,
+    10.0,
+    3.162,
+    1.0,
+    0.3162,
+    0.1,
+    0.03162,
+    0.01,
+    0.003162,
+    0.001
+  ],
+  "monte_carlo_check": [
+    {
+      "q_scale": 0.001,
+      "r_scale": 1.0,
+      "rmse_theory": 4.991,
+      "rmse_monte_carlo": 5.009,
+      "nees_theory": 1999.0,
+      "nees_monte_carlo": 1992.0
+    },
+    {
+      "q_scale": 0.01,
+      "r_scale": 1.0,
+      "rmse_theory": 2.123,
+      "rmse_monte_carlo": 2.125,
+      "nees_theory": 201.4,
+      "nees_monte_carlo": 201.9
+    },
+    {
+      "q_scale": 1.0,
+      "r_scale": 1.0,
+      "rmse_theory": 0.739,
+      "rmse_monte_carlo": 0.7414,
+      "nees_theory": 4.0,
+      "nees_monte_carlo": 4.009
+    },
+    {
+      "q_scale": 100.0,
+      "r_scale": 1.0,
+      "rmse_theory": 1.117,
+      "rmse_monte_carlo": 1.119,
+      "nees_theory": 2.075,
+      "nees_monte_carlo": 2.083
+    },
+    {
+      "q_scale": 1000.0,
+      "r_scale": 1.0,
+      "rmse_theory": 1.446,
+      "rmse_monte_carlo": 1.446,
+      "nees_theory": 2.101,
+      "nees_monte_carlo": 2.103
+    },
+    {
+      "q_scale": 0.01,
+      "r_scale": 0.01,
+      "rmse_theory": 0.739,
+      "rmse_monte_carlo": 0.7414,
+      "nees_theory": 400.0,
+      "nees_monte_carlo": 400.9
+    },
+    {
+      "q_scale": 100.0,
+      "r_scale": 100.0,
+      "rmse_theory": 0.739,
+      "rmse_monte_carlo": 0.7414,
+      "nees_theory": 0.04,
+      "nees_monte_carlo": 0.04009
+    }
+  ],
+  "figures": [
+    "figures/e2_rmse_heatmap.png",
+    "figures/e2_nees_heatmap.png",
+    "figures/e2_ratio_slice.png"
+  ]
+}

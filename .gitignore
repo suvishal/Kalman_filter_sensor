@@ -4,7 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 *.egg-info/
+build/
+dist/
 .DS_Store
-# Large generated outputs; commit only figures/tables used in the report
-results/*
-!results/.gitkeep

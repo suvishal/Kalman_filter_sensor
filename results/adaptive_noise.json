@@ -1,0 +1,93 @@
+{
+  "n_runs": 100,
+  "seed": 2026,
+  "forgetting": 0.98,
+  "static_rows": [
+    {
+      "r_scale": 0.01,
+      "fixed_rmse": 1.118,
+      "adaptive_rmse": 0.7346,
+      "oracle_rmse": 0.733,
+      "fixed_nees": 207.8,
+      "adaptive_nees": 4.071,
+      "adaptive_final_meas_std": 1.992,
+      "true_meas_std": 2.0
+    },
+    {
+      "r_scale": 0.1,
+      "fixed_rmse": 0.8633,
+      "adaptive_rmse": 0.7346,
+      "oracle_rmse": 0.733,
+      "fixed_nees": 22.33,
+      "adaptive_nees": 4.072,
+      "adaptive_final_meas_std": 1.992,
+      "true_meas_std": 2.0
+    },
+    {
+      "r_scale": 1.0,
+      "fixed_rmse": 0.733,
+      "adaptive_rmse": 0.7346,
+      "oracle_rmse": 0.733,
+      "fixed_nees": 3.997,
+      "adaptive_nees": 4.071,
+      "adaptive_final_meas_std": 1.992,
+      "true_meas_std": 2.0
+    },
+    {
+      "r_scale": 10.0,
+      "fixed_rmse": 0.9798,
+      "adaptive_rmse": 0.7345,
+      "oracle_rmse": 0.733,
+      "fixed_nees": 2.157,
+      "adaptive_nees": 4.063,
+      "adaptive_final_meas_std": 1.992,
+      "true_meas_std": 2.0
+    },
+    {
+      "r_scale": 100.0,
+      "fixed_rmse": 2.098,
+      "adaptive_rmse": 0.7345,
+      "oracle_rmse": 0.733,
+      "fixed_nees": 1.963,
+      "adaptive_nees": 3.999,
+      "adaptive_final_meas_std": 1.992,
+      "true_meas_std": 2.0
+    }
+  ],
+  "degraded_meas_std": 8.0,
+  "switch_rows": [
+    {
+      "filter": "Fixed nominal R",
+      "rmse_before": 0.7399,
+      "rmse_degraded": 2.549,
+      "rmse_after": 0.7481,
+      "nees_before": 4.036,
+      "nees_degraded": 32.84,
+      "nees_after": 4.087
+    },
+    {
+      "filter": "Adaptive R",
+      "rmse_before": 0.7415,
+      "rmse_degraded": 2.042,
+      "rmse_after": 0.7675,
+      "nees_before": 4.09,
+      "nees_degraded": 4.142,
+      "nees_after": 3.384
+    },
+    {
+      "filter": "Oracle R",
+      "rmse_before": 0.7399,
+      "rmse_degraded": 2.044,
+      "rmse_after": 0.7482,
+      "nees_before": 4.036,
+      "nees_degraded": 3.9,
+      "nees_after": 4.087
+    }
+  ],
+  "figures": [
+    "figures/e5_static_misspecification.png",
+    "figures/e5_noise_tracking.png",
+    "figures/e5_error_over_time.png",
+    "figures/e5_nees_over_time.png"
+  ]
+}

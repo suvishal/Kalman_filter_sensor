@@ -1,0 +1,77 @@
+{
+  "n_runs": 500,
+  "seed": 2026,
+  "scenario": {
+    "dt": 0.1,
+    "accel_std": 0.5,
+    "meas_std": 2.0,
+    "n_steps": 800,
+    "burn_in": 400,
+    "mean_velocity": [
+      5.0,
+      2.0
+    ],
+    "init_vel_std": 2.0
+  },
+  "rows": [
+    {
+      "meas_std": 0.5,
+      "raw": 0.7064,
+      "moving_average": 0.5919,
+      "moving_average_window": 2,
+      "exp_smoothing": 0.5983,
+      "exp_smoothing_alpha": 0.8,
+      "kalman": 0.2557,
+      "kalman_theory": 0.2568,
+      "kalman_velocity_rmse": 0.2628
+    },
+    {
+      "meas_std": 1.0,
+      "raw": 1.415,
+      "moving_average": 1.042,
+      "moving_average_window": 3,
+      "exp_smoothing": 1.022,
+      "exp_smoothing_alpha": 0.6,
+      "kalman": 0.4395,
+      "kalman_theory": 0.4362,
+      "kalman_velocity_rmse": 0.3143
+    },
+    {
+      "meas_std": 2.0,
+      "raw": 2.827,
+      "moving_average": 1.704,
+      "moving_average_window": 4,
+      "exp_smoothing": 1.705,
+      "exp_smoothing_alpha": 0.4,
+      "kalman": 0.7315,
+      "kalman_theory": 0.739,
+      "kalman_velocity_rmse": 0.3695
+    },
+    {
+      "meas_std": 5.0,
+      "raw": 7.08,
+      "moving_average": 3.297,
+      "moving_average_window": 6,
+      "exp_smoothing": 3.322,
+      "exp_smoothing_alpha": 0.3,
+      "kalman": 1.479,
+      "kalman_theory": 1.479,
+      "kalman_velocity_rmse": 0.4727
+    },
+    {
+      "meas_std": 10.0,
+      "raw": 14.15,
+      "moving_average": 5.299,
+      "moving_average_window": 10,
+      "exp_smoothing": 5.347,
+      "exp_smoothing_alpha": 0.2,
+      "kalman": 2.496,
+      "kalman_theory": 2.495,
+      "kalman_velocity_rmse": 0.5581
+    }
+  ],
+  "figures": [
+    "figures/e1_rmse_vs_noise.png",
+    "figures/e1_example_track.png"
+  ]
+}
